@@ -8,7 +8,7 @@ metadata:
 spec:
   namespaceSelector:
     matchNames:
-      - todoapp
+      - {{ .Release.Namespace }}
   selector:
     matchLabels:
       app: todoapp
